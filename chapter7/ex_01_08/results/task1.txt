@@ -1,0 +1,7 @@
+
+Status: FAILED!
+Check: 1
+Test: Problem 1
+Reason: The following error is preventing tests from completing: 1065 (42000): Query was empty
+Error : ProgrammingError - 1065 (42000): Query was empty
+Timestamp: 2026-03-04 20:25:17.753863
