@@ -1,0 +1,24 @@
+
+Status: FAILED!
+Check: 1
+Test: Problem 3
+Reason: Expected:
++--------------+------------+--------------+------------+-----------+-------------+----------+---------------------+--------------+
+|  PROJ_NAME   | PROJ_VALUE | PROJ_BALANCE | EMP_LNAME  | EMP_FNAME | EMP_INITIAL | JOB_CODE |   JOB_DESCRIPTION   | JOB_CHG_HOUR |
++--------------+------------+--------------+------------+-----------+-------------+----------+---------------------+--------------+
+|  Starflight  | 2650500.00 |  2309880.00  |   Alonzo   |   Maria   |      D      |   500    |     Programmer      |    35.75     |
+|  Evergreen   | 1453500.00 |  1002350.00  |  Arbough   |   June    |      E      |   503    | Electrical Engineer |    84.50     |
+| Rolling Tide | 805000.00  |  500345.20   |   Senior   |   David   |      H      |   501    |   Systems Analyst   |    96.75     |
+|  Amber Wave  | 3500500.00 |  2110346.00  | Washington |   Ralph   |      B      |   501    |   Systems Analyst   |    96.75     |
++--------------+------------+--------------+------------+-----------+-------------+----------+---------------------+--------------+
+Found:
++--------------+------------+--------------+------------+-------------+----------+---------------------+--------------+
+|  PROJ_NAME   | PROJ_VALUE | PROJ_BALANCE | EMP_LNAME  | EMP_INITIAL | JOB_CODE |   JOB_DESCRIPTION   | JOB_CHG_HOUR |
++--------------+------------+--------------+------------+-------------+----------+---------------------+--------------+
+| Rolling Tide | 805000.00  |  500345.20   |   Senior   |    David    |   501    |   Systems Analyst   |    96.75     |
+|  Evergreen   | 1453500.00 |  1002350.00  |  Arbough   |    June     |   503    | Electrical Engineer |    84.50     |
+|  Starflight  | 2650500.00 |  2309880.00  |   Alonzo   |    Maria    |   500    |     Programmer      |    35.75     |
+|  Amber Wave  | 3500500.00 |  2110346.00  | Washington |    Ralph    |   501    |   Systems Analyst   |    96.75     |
++--------------+------------+--------------+------------+-------------+----------+---------------------+--------------+
+Error : AssertionError - 
+Timestamp: 2026-03-04 21:10:14.761000
