@@ -1,0 +1,7 @@
+
+Status: FAILED!
+Check: 1
+Test: Problem 6
+Reason: The following error is preventing tests from completing: 1054 (42S22): Unknown column 'E.EMP_LNAME' in 'field list'
+Error : ProgrammingError - 1054 (42S22): Unknown column 'E.EMP_LNAME' in 'field list'
+Timestamp: 2026-03-30 00:21:41.905542
