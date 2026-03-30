@@ -2,10 +2,6 @@
 Status: FAILED!
 Check: 1
 Test: Problem 6
-Reason: The following error is preventing tests from completing: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.EMP_NUM = EMPLOYEE.EMP_NUM
-GROUP BY ASSIGNMENT.EMP_NUM, EMPLOYEE.EMP_LNAME
-ORDE' at line 5
-Error : ProgrammingError - 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.EMP_NUM = EMPLOYEE.EMP_NUM
-GROUP BY ASSIGNMENT.EMP_NUM, EMPLOYEE.EMP_LNAME
-ORDE' at line 5
-Timestamp: 2026-03-30 00:29:20.935020
+Reason: The following error is preventing tests from completing: 1052 (23000): Column 'EMP_NUM' in field list is ambiguous
+Error : IntegrityError - 1052 (23000): Column 'EMP_NUM' in field list is ambiguous
+Timestamp: 2026-03-30 00:32:37.214708
