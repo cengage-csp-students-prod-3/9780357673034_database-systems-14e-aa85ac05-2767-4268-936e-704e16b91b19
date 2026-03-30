@@ -1,7 +1,6 @@
 
-Status: FAILED!
+Status: PASSED!
 Check: 1
 Test: Problem 6
-Reason: The following error is preventing tests from completing: 1055 (42000): Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'Ch07_ConstructCo.ASSIGNMENT.ASSIGN_HOURS' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
-Error : ProgrammingError - 1055 (42000): Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'Ch07_ConstructCo.ASSIGNMENT.ASSIGN_HOURS' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
-Timestamp: 2026-03-30 00:36:40.933983
+Reason: The query returned the expected results.None
+Timestamp: 2026-03-30 00:39:20.135789
