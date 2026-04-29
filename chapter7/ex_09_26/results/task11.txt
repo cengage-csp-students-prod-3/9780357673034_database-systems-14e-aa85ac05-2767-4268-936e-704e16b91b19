@@ -2,6 +2,8 @@
 Status: FAILED!
 Check: 1
 Test: Problem 19
-Reason: The following error is preventing tests from completing: 1054 (42S22): Unknown column 'L.LINE_UNITS' in 'field list'
-Error : ProgrammingError - 1054 (42S22): Unknown column 'L.LINE_UNITS' in 'field list'
-Timestamp: 2026-04-29 21:08:36.610694
+Reason: The following error is preventing tests from completing: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS `TOTAL INVOICES`,
+    (SELECT ROUND(SUM(LINE_UNITS * LINE_PRICE), 2) FROM LIN' at line 1
+Error : ProgrammingError - 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS `TOTAL INVOICES`,
+    (SELECT ROUND(SUM(LINE_UNITS * LINE_PRICE), 2) FROM LIN' at line 1
+Timestamp: 2026-04-29 21:10:38.650149
