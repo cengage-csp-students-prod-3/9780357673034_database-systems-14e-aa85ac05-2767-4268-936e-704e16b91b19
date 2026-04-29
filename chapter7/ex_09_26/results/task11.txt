@@ -2,8 +2,17 @@
 Status: FAILED!
 Check: 1
 Test: Problem 19
-Reason: The following error is preventing tests from completing: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS `TOTAL INVOICES`,
-    (SELECT ROUND(SUM(LINE_UNITS * LINE_PRICE), 2) FROM LIN' at line 1
-Error : ProgrammingError - 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS `TOTAL INVOICES`,
-    (SELECT ROUND(SUM(LINE_UNITS * LINE_PRICE), 2) FROM LIN' at line 1
-Timestamp: 2026-04-29 21:10:38.650149
+Reason: Expected:
++----------------+-------------+----------------------------+----------------------------+----------------------------+
+| TOTAL INVOICES | TOTAL SALES | MINIMUM CUSTOMER PURCHASES | LARGEST CUSTOMER PURCHASES | AVERAGE CUSTOMER PURCHASES |
++----------------+-------------+----------------------------+----------------------------+----------------------------+
+|       8        |   1126.03   |           34.97            |           444.00           |           225.21           |
++----------------+-------------+----------------------------+----------------------------+----------------------------+
+Found:
++----------------+-------------+----------------------------+----------------------------+----------------------------+
+| TOTAL INVOICES | TOTAL SALES | MINIMUM CUSTOMER PURCHASES | LARGEST CUSTOMER PURCHASES | AVERAGE CUSTOMER PURCHASES |
++----------------+-------------+----------------------------+----------------------------+----------------------------+
+|       8        |   5630.15   |           34.97            |           444.00           |           225.21           |
++----------------+-------------+----------------------------+----------------------------+----------------------------+
+Error : AssertionError - 
+Timestamp: 2026-04-29 21:11:42.508482
