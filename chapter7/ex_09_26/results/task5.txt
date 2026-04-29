@@ -2,25 +2,12 @@
 Status: FAILED!
 Check: 1
 Test: Problem 13
-Reason: Expected:
-+----------+-------------+-----------------+
-| CUS_CODE | CUS_BALANCE | TOTAL PURCHASES |
-+----------+-------------+-----------------+
-|  10011   |    0.00     |     444.00      |
-|  10012   |   345.86    |     153.85      |
-|  10014   |    0.00     |     422.77      |
-|  10015   |    0.00     |      34.97      |
-|  10018   |   216.55    |      70.44      |
-+----------+-------------+-----------------+
-Found:
-+----------+-------------+-----------------+
-| CUS_CODE | CUS_BALANCE | TOTAL_PURCHASES |
-+----------+-------------+-----------------+
-|  10011   |    0.00     |     444.00      |
-|  10012   |   345.86    |     153.85      |
-|  10014   |    0.00     |     422.77      |
-|  10015   |    0.00     |      34.97      |
-|  10018   |   216.55    |      70.44      |
-+----------+-------------+-----------------+
-Error : AssertionError - 
-Timestamp: 2026-04-29 20:58:07.360319
+Reason: The following error is preventing tests from completing: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PURCHASES
+FROM CUSTOMER C
+JOIN INVOICE I ON C.CUS_CODE = I.CUS_CODE
+JOIN LINE L ' at line 4
+Error : ProgrammingError - 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PURCHASES
+FROM CUSTOMER C
+JOIN INVOICE I ON C.CUS_CODE = I.CUS_CODE
+JOIN LINE L ' at line 4
+Timestamp: 2026-04-29 20:59:09.581438
