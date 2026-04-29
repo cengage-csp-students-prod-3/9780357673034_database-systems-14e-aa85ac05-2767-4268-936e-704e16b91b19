@@ -1,7 +1,7 @@
 -- Write your query below and then click "Run Query" to execute it. To save multiple queries, click the "+" icon on the left.SELECT SELE
-SELECT DISTINCT
-    C.CUS_CODE,
-    C.CUS_BALANCE
+SELECT
+    MIN(C.CUS_BALANCE) AS `Minimum Balance`,
+    MAX(C.CUS_BALANCE) AS `Maximum Balance`,
+    ROUND(AVG(C.CUS_BALANCE), 2) AS `Average Balance`
 FROM CUSTOMER C
-JOIN INVOICE I ON C.CUS_CODE = I.CUS_CODE
-ORDER BY C.CUS_CODE;
+JOIN INVOICE I ON C.CUS_CODE = I.CUS_CODE;
