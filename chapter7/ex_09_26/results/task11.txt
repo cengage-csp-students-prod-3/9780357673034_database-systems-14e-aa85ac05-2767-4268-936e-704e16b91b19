@@ -2,17 +2,6 @@
 Status: FAILED!
 Check: 1
 Test: Problem 19
-Reason: Expected:
-+----------------+-------------+----------------------------+----------------------------+----------------------------+
-| TOTAL INVOICES | TOTAL SALES | MINIMUM CUSTOMER PURCHASES | LARGEST CUSTOMER PURCHASES | AVERAGE CUSTOMER PURCHASES |
-+----------------+-------------+----------------------------+----------------------------+----------------------------+
-|       8        |   1126.03   |           34.97            |           444.00           |           225.21           |
-+----------------+-------------+----------------------------+----------------------------+----------------------------+
-Found:
-+----------------+-------------+----------------------------+----------------------------+----------------------------+
-| TOTAL INVOICES | TOTAL SALES | MINIMUM CUSTOMER PURCHASES | LARGEST CUSTOMER PURCHASES | AVERAGE CUSTOMER PURCHASES |
-+----------------+-------------+----------------------------+----------------------------+----------------------------+
-|       90       |   5630.15   |           34.97            |           444.00           |           225.21           |
-+----------------+-------------+----------------------------+----------------------------+----------------------------+
-Error : AssertionError - 
-Timestamp: 2026-04-29 21:07:27.637796
+Reason: The following error is preventing tests from completing: 1054 (42S22): Unknown column 'L.LINE_UNITS' in 'field list'
+Error : ProgrammingError - 1054 (42S22): Unknown column 'L.LINE_UNITS' in 'field list'
+Timestamp: 2026-04-29 21:08:36.610694
