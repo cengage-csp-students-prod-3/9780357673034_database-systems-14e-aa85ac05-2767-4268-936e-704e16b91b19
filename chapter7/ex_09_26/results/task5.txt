@@ -2,25 +2,6 @@
 Status: FAILED!
 Check: 1
 Test: Problem 13
-Reason: Expected:
-+----------+-------------+-----------------+
-| CUS_CODE | CUS_BALANCE | TOTAL PURCHASES |
-+----------+-------------+-----------------+
-|  10011   |    0.00     |     444.00      |
-|  10012   |   345.86    |     153.85      |
-|  10014   |    0.00     |     422.77      |
-|  10015   |    0.00     |      34.97      |
-|  10018   |   216.55    |      70.44      |
-+----------+-------------+-----------------+
-Found:
-+----------+-------------+-----------------+
-| CUS_CODE | CUS_BALANCE | TOTAL PURCHASES |
-+----------+-------------+-----------------+
-|  10011   |    0.00     |    444.0000     |
-|  10012   |   345.86    |    153.8500     |
-|  10014   |    0.00     |    422.7700     |
-|  10015   |    0.00     |     34.9700     |
-|  10018   |   216.55    |     70.4400     |
-+----------+-------------+-----------------+
-Error : AssertionError - 
-Timestamp: 2026-04-29 20:52:46.925583
+Reason: The following error is preventing tests from completing: 1055 (42000): Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'Ch07_SaleCo.L.LINE_UNITS' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Error : ProgrammingError - 1055 (42000): Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'Ch07_SaleCo.L.LINE_UNITS' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Timestamp: 2026-04-29 20:54:33.456984
