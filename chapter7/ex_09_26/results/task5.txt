@@ -1,13 +1,6 @@
 
-Status: FAILED!
+Status: PASSED!
 Check: 1
 Test: Problem 13
-Reason: The following error is preventing tests from completing: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PURCHASES
-FROM CUSTOMER C
-JOIN INVOICE I ON C.CUS_CODE = I.CUS_CODE
-JOIN LINE L ' at line 4
-Error : ProgrammingError - 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PURCHASES
-FROM CUSTOMER C
-JOIN INVOICE I ON C.CUS_CODE = I.CUS_CODE
-JOIN LINE L ' at line 4
-Timestamp: 2026-04-29 20:59:09.581438
+Reason: The query returned the expected results.None
+Timestamp: 2026-04-29 21:00:29.654300
