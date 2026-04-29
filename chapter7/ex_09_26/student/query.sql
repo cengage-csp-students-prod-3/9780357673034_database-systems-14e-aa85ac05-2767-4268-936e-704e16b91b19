@@ -1,7 +1,6 @@
--- Write your query below and then click "Run Query" to execute it. To save multiple queries, click the "+" icon on the left.
-SELECT 
+-- Write your query below and then click "Run Query" to execute it. To save multiple queries, click the "+" icon on the left.SELECT 
     (SELECT COUNT(*) FROM INVOICE) AS `TOTAL INVOICES`,
-    ROUND(SUM(L.LINE_UNITS * L.LINE_PRICE), 2) AS `TOTAL SALES`,
+    (SELECT ROUND(SUM(LINE_UNITS * LINE_PRICE), 2) FROM LINE) AS `TOTAL SALES`,
     ROUND(MIN(customer_total), 2) AS `MINIMUM CUSTOMER PURCHASES`,
     ROUND(MAX(customer_total), 2) AS `LARGEST CUSTOMER PURCHASES`,
     ROUND(AVG(customer_total), 2) AS `AVERAGE CUSTOMER PURCHASES`
