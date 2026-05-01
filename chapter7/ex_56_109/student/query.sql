@@ -1,11 +1,10 @@
 SELECT 
-    PAT_ID,
-    PAT_FNAME,
-    PAT_LNAME,
-    PAT_TYPE
+    AU_ID,
+    AU_FNAME,
+    AU_LNAME
 FROM 
-    PATRON
+    AUTHOR
 WHERE 
-    PAT_LNAME LIKE 'C%'
+    AU_BIRTHYEAR IS NULL
 ORDER BY 
-    PAT_ID;
+    AU_ID;
