@@ -1,10 +1,11 @@
 SELECT 
     PAT_ID,
     PAT_FNAME,
-    PAT_LNAME
+    PAT_LNAME,
+    PAT_TYPE
 FROM 
     PATRON
 WHERE 
-    PAT_TYPE = 'Student'
+    PAT_LNAME LIKE 'C%'
 ORDER BY 
     PAT_ID;
