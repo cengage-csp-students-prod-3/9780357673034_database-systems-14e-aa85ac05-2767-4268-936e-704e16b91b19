@@ -1,4 +1,3 @@
-SELECT *
-FROM EMP_2
-WHERE EMP_NUM IN ('102','104','106','108','109')
-ORDER BY EMP_NUM;
+UPDATE EMP_2
+SET EMP_PCT = 10.00
+WHERE EMP_LNAME IN ('Senior', 'Ramoras', 'Smithfield', 'Washington', 'Smith');
