@@ -1,16 +1,6 @@
 
-Status: FAILED!
+Status: PASSED!
 Check: 1
 Test: Problem 10
-Reason: Expected:
-+---------+-----------+-----------+-------------+--------------+----------+---------+----------+
-| EMP_NUM | EMP_LNAME | EMP_FNAME | EMP_INITIAL | EMP_HIREDATE | JOB_CODE | EMP_PCT | PROJ_NUM |
-+---------+-----------+-----------+-------------+--------------+----------+---------+----------+
-|   101   |   News    |   John    |      G      |  2000-11-08  |   502    |  5.00   |   NULL   |
-|   105   |  Johnson  |   Alice   |      K      |  1997-02-01  |   502    |  5.00   |   NULL   |
-|   107   |  Alonzo   |   Maria   |      D      |  1997-10-10  |   501    |  5.00   |   NULL   |
-+---------+-----------+-----------+-------------+--------------+----------+---------+----------+
-Found:
-
-Error : AssertionError - 
-Timestamp: 2026-05-01 19:32:01.146024
+Reason: The query returned the expected results.None
+Timestamp: 2026-05-01 19:33:44.998966
