@@ -1,2 +1,8 @@
-Run
-uery below and then click "Run Query" to execute it. To save multiple queries, click the "+" icon on the left.
+SELECT 
+    BOOK_TITLE,
+    BOOK_COST,
+    BOOK_YEAR
+FROM 
+    BOOK
+ORDER BY 
+    BOOK_TITLE;
