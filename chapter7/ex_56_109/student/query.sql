@@ -1,10 +1,8 @@
 SELECT 
-    PAT_ID AS `PATRON`,
-    BOOK_NUM AS `BOOK`,
-    CHECK_IN_DATE - CHECK_OUT_DATE AS `Days Kept`
+    PAT_ID,
+    CONCAT(PAT_FNAME, ' ', PAT_LNAME) AS "Patron Name",
+    PAT_TYPE
 FROM 
-    CHECKOUT
+    PATRON
 ORDER BY 
-    `Days Kept` DESC,
-    PAT_ID ASC,
-    BOOK_NUM ASC;
+    PAT_ID;
