@@ -1,7 +1,7 @@
 SELECT 
     BOOK_NUM,
-    BOOK_TITLE,
-    BOOK_SUBJECT
+    BOOK_TITLE AS TITLE,
+    BOOK_SUBJECT AS "Subject of Book"
 FROM 
     BOOK
 ORDER BY 
