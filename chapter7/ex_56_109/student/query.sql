@@ -5,6 +5,6 @@ SELECT
 FROM 
     BOOK
 WHERE 
-    BOOK_COST = 59.95
+    BOOK_SUBJECT = 'Database'
 ORDER BY 
     BOOK_NUM;
