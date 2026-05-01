@@ -1,1 +1,10 @@
--- Write your query below and then click "Run Query" to execute it. To save multiple queries, click the "+" icon on the left.
+CREATE TABLE IF NOT EXISTS EMP_1 (
+    EMP_NUM VARCHAR(3),
+    EMP_LNAME VARCHAR(15) NOT NULL,
+    EMP_FNAME VARCHAR(15) NOT NULL,
+    EMP_INITIAL VARCHAR(1),
+    EMP_HIREDATE DATE,
+    JOB_CODE VARCHAR(3),
+    PRIMARY KEY (EMP_NUM),
+    FOREIGN KEY (JOB_CODE) REFERENCES JOB(JOB_CODE)
+);
