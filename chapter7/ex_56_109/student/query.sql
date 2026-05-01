@@ -1,4 +1,4 @@
 SELECT 
-    MIN(BOOK_COST) AS "Least Expensive"
+    COUNT(DISTINCT PAT_ID) AS "Different Patrons"
 FROM 
-    BOOK;
+    CHECKOUT;
