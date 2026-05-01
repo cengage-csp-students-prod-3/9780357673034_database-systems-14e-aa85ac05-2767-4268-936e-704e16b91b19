@@ -1,11 +1,12 @@
 SELECT 
     BOOK_NUM,
     BOOK_TITLE,
-    BOOK_YEAR
+    BOOK_SUBJECT,
+    BOOK_COST
 FROM 
     BOOK
 WHERE 
-    BOOK_YEAR > 2015
-    AND BOOK_SUBJECT = 'Programming'
+    (BOOK_SUBJECT = 'Middleware' OR BOOK_SUBJECT = 'Cloud')
+    AND BOOK_COST > 70
 ORDER BY 
     BOOK_NUM;
