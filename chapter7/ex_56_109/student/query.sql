@@ -1,10 +1,10 @@
 SELECT 
-    BOOK_SUBJECT,
-    COUNT(*) AS "Books In Subject"
+    W.AU_ID,
+    COUNT(*) AS "Books Written"
 FROM 
-    BOOK
+    WRITES W
 GROUP BY 
-    BOOK_SUBJECT
+    W.AU_ID
 ORDER BY 
     COUNT(*) DESC,
-    BOOK_SUBJECT ASC;
+    W.AU_ID ASC;
