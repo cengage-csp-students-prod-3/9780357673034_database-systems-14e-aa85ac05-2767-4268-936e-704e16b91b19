@@ -1,8 +1,8 @@
 SELECT 
-    PAT_ID,
-    CONCAT(PAT_FNAME, ' ', PAT_LNAME) AS "Patron Name",
-    PAT_TYPE
+    BOOK_NUM,
+    CONCAT(BOOK_TITLE, ' (', BOOK_YEAR, ')') AS BOOK,
+    BOOK_SUBJECT
 FROM 
-    PATRON
+    BOOK
 ORDER BY 
-    PAT_ID;
+    BOOK_NUM;
