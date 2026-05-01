@@ -1,3 +1,3 @@
 UPDATE EMP_2
-SET EMP_PCT = 10.00
-WHERE EMP_LNAME IN ('Senior', 'Ramoras', 'Smithfield', 'Washington', 'Smith');
+SET EMP_PCT = EMP_PCT + 0.15
+WHERE EMP_NUM = '107';
