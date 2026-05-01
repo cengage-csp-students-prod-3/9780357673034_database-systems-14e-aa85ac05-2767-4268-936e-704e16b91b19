@@ -1,4 +1,4 @@
 SELECT 
-    COUNT(*) AS "Number of Books"
+    COUNT(DISTINCT BOOK_SUBJECT) AS "Number of Subjects"
 FROM 
     BOOK;
