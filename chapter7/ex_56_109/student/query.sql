@@ -1,4 +1,10 @@
 SELECT 
-    COUNT(DISTINCT PAT_ID) AS "Different Patrons"
+    BOOK_SUBJECT,
+    COUNT(*) AS "Books In Subject"
 FROM 
-    CHECKOUT;
+    BOOK
+GROUP BY 
+    BOOK_SUBJECT
+ORDER BY 
+    COUNT(*) DESC,
+    BOOK_SUBJECT ASC;
