@@ -1,8 +1,14 @@
 SELECT 
-    BOOK_NUM,
-    CONCAT(BOOK_TITLE, ' (', BOOK_YEAR, ')') AS BOOK,
-    BOOK_SUBJECT
+    A.AU_LNAME,
+    A.AU_FNAME,
+    W.BOOK_NUM
 FROM 
-    BOOK
+    AUTHOR A
+JOIN 
+    WRITES W
+ON 
+    A.AU_ID = W.AU_ID
 ORDER BY 
-    BOOK_NUM;
+    A.AU_LNAME,
+    A.AU_FNAME,
+    W.BOOK_NUM;
